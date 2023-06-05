@@ -3,10 +3,12 @@ import Layout from '../components/layout'
 const Nosotros = () => {
   return (
   <>
-  <Layout>
+  <Layout
+    title="Nosotros"
+    description="Nosotros"
+  >
     <h1>Nosotros</h1>
 
-    <Link href={'/'}>Indes</Link>
   </Layout>
   </>
   )

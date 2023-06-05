@@ -34,3 +34,14 @@ main {
   color: var(--primary);
   margin: 5rem 0;
 }
+.navegacion {
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    margin-top: 0;
+  }
+}
+img {
+  height: auto
+}
