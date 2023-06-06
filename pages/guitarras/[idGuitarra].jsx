@@ -1,6 +1,6 @@
+import Layout from "../../components/layout"
 import Image from "next/image"
-import styles from "../../styles/guitarras.module.css"
-import Layout from "@/components/layout"
+import styles from '../../styles/guitarras.module.css'
 
 const Guitarra = ({guitarra}) => {
 
@@ -9,10 +9,9 @@ const Guitarra = ({guitarra}) => {
   return (
     <Layout
         title={`Guitarra ${nombre}`}
-        description={`Guitarra ${nombre} de ${descripcion}`}
     >
-        <div>
-            <Image alt={`Imagen Guitarra ${nombre}`} src={imagen.data.attributes.url} width={600} height={400} />  
+        <div className={styles.guitarra}>
+            <Image alt={`Imagen Guitarra ${nombre}`} src={imagen?.data?.attributes?.url} width={600} height={400} />  
             <div className={styles.contenido}>
                 <h3>{nombre}</h3>
                 <p className={styles.descripcion}>{descripcion}</p>

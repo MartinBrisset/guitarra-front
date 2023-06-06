@@ -1,0 +1,24 @@
+.contenido {
+    display: grid;
+    align-self: flex-start;
+    gap: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .contenido {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+}
+
+.carrito {
+    padding: 3rem 0;
+
+}
+
+.resumen {
+    background-color: #F9FAFB;
+    padding: 3rem;
+    border-radius: 1rem;
+}
