@@ -17,8 +17,68 @@
 
 }
 
+
+.producto {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+}
+
+.producto:last-of-type {
+    border-bottom: none;
+}
+
+.producto p {
+    margin: 0;
+}
+
+.producto span {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.nombre {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.precio span {
+    margin-top: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.subtotal {
+    font-size: 2rem;
+}
+
+.select {
+    all: unset;
+    border: 1px solid #E1E1E1;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
 .resumen {
     background-color: #F9FAFB;
     padding: 3rem;
     border-radius: 1rem;
+    position: static;
+}
+
+.eliminar {
+    all: unset;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 900;
+}
+
+.eliminar:hover {
+    cursor: pointer;
 }
